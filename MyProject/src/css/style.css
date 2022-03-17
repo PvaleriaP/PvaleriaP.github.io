@@ -1,0 +1,387 @@
+body{
+    font-family: Arial, sans-serif;
+}
+nav{
+   width: 100%;
+   height: 60px;
+   background: #344051
+}
+
+.logo{
+   color:#fff;
+   font-size: 28px;
+   line-height: 60px;
+   padding-left:388px;
+   float: left;   
+}
+
+.menu{
+   float: left;
+   padding-left:432px;
+}
+
+.menu li{
+    float:left;
+    line-height: 60px;
+    color:#fff;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/boy.png)90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+}
+
+.title__container{
+    float:left;
+    margin:432px 0px 0px 404px;
+    color:#2c384a;
+    text-align: center;
+}
+
+.title__container h1{
+   font-size: 60px;
+   font-weight: bold;
+}
+
+.title__container h4{
+    margin-top:40px;
+    font-size: 22px;
+    color:#79818d;
+}
+    
+.title__container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color:#6d7682;
+    font-size:13px;
+    padding: 0px 16px;
+    margin:58px 28px 0px 14px;
+}    
+    
+.obomne h2{
+    text-align: center;
+    font-size: 27px;
+    margin:108px 0px 0px 0px;
+    color:#263244;
+    font-weight: 600; 
+}
+
+.cherta img{
+    padding: 5px 0px 0px 60px;
+}
+
+.obomne img{
+    margin: 30px 0px 10px 835px;
+}
+
+.obomne p{
+    font-size: 18px;
+    color:#3f495a;
+    margin:23px 500px 0px 520px;
+}
+
+.obomne input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6f707e;
+    background: none;
+    border-radius: 10px;
+    color:#6f707e;
+    font-size:13px;
+    padding: 12px 18px;
+    margin:36px 0px 97px 870px;
+    font-weight: 600;
+}
+
+.shtoumeu{
+    background: url(../img/bg2.jpg) center/cover no-repeat; 
+    width: 100%;
+    height:522px;
+}
+
+.shtoumeu h2{
+    text-align: center;
+    font-size: 23px;
+    padding: 100px 0px 0px 18px;
+    color:#2c384a;
+    font-weight: 600;
+}
+
+.shtoumeu h3{
+    float: left;
+    font-size: 16px;
+    color:#cf7600;
+    font-weight: 600;
+    margin: 0px 50px 0px 50px;
+	width:250px;
+	text-align: center;
+}
+
+.shtoumeu img{
+	position:relative;
+	margin-left: 0%;
+	margin-bottom: 10%;	
+}
+
+.shtoumeu p{
+    float: left;
+    text-align: center;
+    font-weight:500;
+    font-size: 18px;
+    color:#3f495a;
+    width: 100%;
+    margin: 10px 10px 0px 10px;
+}
+
+.block{
+    margin-left: 230px;
+}
+
+.keic h2{
+    text-align: center;
+    font-size: 27px;
+    margin-top:105px;
+    color:#263244;
+    font-weight: 600;
+}
+
+.certa img{
+   margin: 0px 0px 20px 895px;
+   
+}
+
+.keic p{
+    text-align: center;
+    font-size: 18px;
+    color:#3f495a;
+}
+
+.keic img{
+    margin-top:40px;
+}
+
+.keic h3{
+    font-size: 20px;
+    margin:0px 0px 0px 400px;
+    color:#384354;
+    font-weight: 600;
+}
+
+.keic h4{
+    font-size: 15px;
+    margin:10px 0px 10px 400px;
+    color:#3f495a;
+    font-weight: 600; 
+}
+
+.keic h5{
+    font-size: 20px;
+    margin:0px 0px 0px 400px;
+    color:#384354;
+    font-weight: 600;
+}
+
+.naz p{
+    color:#3f495a;
+    margin: 10px 0px 0px 400px;
+    font-size: 19px;
+    text-align:justify;
+    width: 850px;
+}
+
+.keic input{
+    height: 40px;
+    text-align: center;
+    background-color: #63b5ae;
+    border-radius: 5px;
+    color:#ffffff;
+    font-size:15px;
+    font-weight: 600;
+    padding: 0px 16px;
+    margin:10px 28px 0px 400px;
+    width: 180px;
+}
+
+.stoimost h2{
+    text-align: center;
+    font-size: 27px;
+    margin:108px 0px 0px 0px;
+    color:#263244;
+    font-weight: 600;
+}
+
+.pun h3{
+    font-size: 20px;
+    margin:50px 0px 0px 498px;
+    color:#1c2534;
+    font-weight: 600;
+}
+
+.pun select{
+    background-color: #eeeeee;
+    width: 880px; 
+    height: 50px;
+    margin: 22px 0px 0px 494px;
+    color:#737373;
+    padding:0px 20px;
+    border: 1px solid #eeeeee;
+    font-weight: 600;
+}
+
+.stoimost img{
+    margin: 20px 0px 5px 490px;
+}
+
+.stoimost h4{
+    font-size:15px;
+    font-weight: 600;
+    margin:15px 0px 0px 496px;
+    color:#1c2534;
+}
+
+.statistica{
+    background: url(../img/bg3.jpg) center/cover no-repeat; 
+    width: 100%;
+    height:500px;
+    margin-top: 150px; 
+}
+
+.statistica h2{
+    text-align: center;
+    font-size: 27px;
+    padding: 100px 0px 0px 0px;
+    color:#263244;
+    font-weight: 600;
+}
+
+.statistica h4{ 
+    float: left;
+    font-size: 16px;
+    color:#323e4f;
+    font-weight: 600;
+    margin: 123px 140px 10px 0px;
+	width:210px;
+	text-align: center;
+}
+
+.statistica img{
+	position:relative;
+	margin-bottom: 80px;	
+}
+
+.bloc{
+    margin-left: 290px;
+}
+
+.otz h2{
+    text-align: center;
+    font-size: 27px;
+    margin:108px 0px 0px 0px;
+    color:#263244;
+    font-weight: 600;
+}
+
+.otz img{
+    margin: 96px 0px 20px 885px;
+}
+
+.otz p{
+    color: #243042;
+    font-size: 18px;
+    margin:23px 500px 35px 520px;
+    text-align: center;
+}
+
+.otz span{
+    color: #243042;
+    font-size: 18px;
+    margin:0px 500px 0px 780px;
+    text-align: center;
+}
+
+.podval{
+    background: url(../img/bg4.jpg) center/cover no-repeat; 
+    width: 100%;
+    height:807px;
+    margin-top: 150px; 
+}
+
+.podval h2{
+    text-align: center;
+    font-size: 27px;
+    color:#ffffff;
+    font-weight: 600;
+    padding:105px 0px 0px 0px;
+}
+ 
+.podval p{
+    color:#ffffff;
+    font-size: 18px;
+    margin:70px 500px 35px 520px;
+    text-align: center;
+}
+
+.podval h4{
+    float: left;
+    font-size: 16px;
+    color:#ffffff;
+    margin: 20px 0px 60px 30px;
+	width:180px;
+	text-align: center;
+}
+
+.podval img{
+    position:relative;
+	margin-left: 0%;
+	margin-bottom: 20px;	
+}
+
+.blok{
+    margin-left: 600px;
+}
+
+.podval h3{
+    text-align: center;
+    font-size: 20px;
+    color:#ffffff;
+    font-weight: 600;
+    padding:150px 700px 0px 0px;
+}
+
+.podval input{
+ background-color:rgb(218, 221, 227,40); 
+ width: 350px; 
+ height: 34px;
+ margin-right:20px; 
+ color:#5d5d5e;
+ font-weight: 600;
+ padding-left: 10px;
+}
+
+.soob input{
+ padding-bottom: 55px;
+ width: 724px; 
+ height: 93px;
+}
+
+.otpravit input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    background: none;
+    border-radius: 5px;
+    color:#ffffff;
+    font-size:15px;
+    padding: 0px 16px;
+    margin:58px 28px 0px 870px;
+    width: 130px;
+    font-weight: 600;
+}
+
+  
