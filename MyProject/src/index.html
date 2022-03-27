@@ -12,36 +12,48 @@
 <title>Петушенко Валерия - Веб-разработчик</title>
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body>
+
+<div class="preloader">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="loader animate__animated animate__bounce">Загрузка</div>
 
 <header> 
 <nav>
     <div class="logo">Петушенко Валерия</div>
     <div class="menu">
     <ul>
-    <li>ОБО МНЕ</li>
-    <li>УСЛУГИ</li>
-    <li>КЕЙСЫ</li>
-    <li>ПРАЙС</li>
-    <li>ОТЗЫВЫ</li>
-    <li>КОНТАКТЫ</li>
+        <li><a href="#">ОБО МНЕ</a></li>
+    <li><a href="#">УСЛУГИ</a></li>
+    <li><a href="#">КЕЙСЫ</a></li>
+    <li><a href="#">ПРАЙС</a></li>
+    <li><a href="#">ОТЗЫВЫ</a></li>
+    <li><a href="#">КОНТАКТЫ</a></li>
         </ul></div>
 </nav>
 </header>
 
-<div class="main"><div class="title__container">
+<main>
+<section class="main"><div class="title__container">
     <h1>Привет<br>Я Петушенко Валерия</h1>
     <h4>Фулл стек веб-разработчик</h4>
-    <input type="submit"value="Обо мне">
-    <input type="submit"value="Мои работы">
+    <input type="button" value="Обо мне">
+    <input type="button" value="Мои работы">
     </div>
-    </div>
+    </section>
+    </main>
     
     <div class="obomne">
     <h2>ОБО МНЕ</h2>
-    <div class="cherta">
+    <div class="cherta_1">
     <img src="img/chertazagolovka.png">
     </div>
     <img src="img/photo.png"alt="аватарка">
@@ -52,7 +64,7 @@
      
     <div class="shtoumeu">
       <h2>ЧТО Я УМЕЮ</h2>
-      <div class="herta">
+      <div class="cherta_2">
       <img src="img/chertazagolovka.png">
       </div>
       <div class="block">
@@ -65,11 +77,13 @@
     
     <div class="keic">
     <h2>КЕЙСЫ</h2>
-    <div class="certa">
+    <div class="cherta_3">
     <img src="img/chertazagolovka.png">
     </div>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam rem sit aperiam, facere modi a.</p>
+    <div class="kart">
     <img src="img/kartinka.png">
+        </div>
     <div class="cl">
     <h3>CLIENT:</h3>
     <h4>Какая-то компания</h4>
@@ -106,7 +120,7 @@
     
     <div class="statistica">
     <h2>НЕМНОГО СТАТИСТИКИ</h2>
-    <div class="hcerta">
+    <div class="cherta_4">
     <img src="img/chertazagolovka.png">
     </div>
     <div class="bloc">
@@ -119,7 +133,7 @@
     
     <div class="otz">
     <h2>ОТЗЫВЫ</h2>
-    <div class="zag">
+    <div class="cherta_5">
     <img src="img/chertazagolovka.png">
     </div>
     <img src="img/photo2.png"alt="аватарка">
@@ -130,7 +144,7 @@
     <footer>
         <div class="podval">
          <h2>МОИ КОНТАКТЫ</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, nesciunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, nesciunt.</p>
         <div class="blok">
         <h4><img src="img/geo.png"alt="картинка"><br>Санкт-Петербург<br>Невский проспект 11</h4>
         <h4><img src="img/email.png"alt="картинка"><br>lerap6563@gmail.com</h4>
@@ -139,14 +153,14 @@
         <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
         <form action="#">
         <div class="vvod">
-        <input type="text"name="text_unput"value=""placeholder="Имя">
-        <input type="text"name="text_unput"value=""placeholder="Email">
+        <input type="text"value="" autocomplete="on" required placeholder="Имя">
+        <input type="email" autocomplete="on" required placeholder="Email">
         </div>
         <div class="soob">
-        <br><input type="text"name="text_unput"value=""placeholder="Сообщение">
+        <br><input type="text"value="" placeholder="Сообщение">
         </div>
         <div class="otpravit">
-        <br><input type="reset"value="Отправить">
+        <br><input type="submit" value="Отправить">
         </div>
         </form>
         </div>

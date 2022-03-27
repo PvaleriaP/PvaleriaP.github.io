@@ -1,10 +1,82 @@
 body{
     font-family: Arial, sans-serif;
 }
+
+.preloader{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader span{
+    display: block;
+    height: 15px;
+    width: 15px;
+    background: #ffffff;
+    margin:0px 7px;
+    border-radius: 10px;
+    animation: 1.2s upDown ease infinite;
+}
+
+.preloader span:first-child{
+    animation-delay: .15s;
+}
+
+.preloader span:nth-child(2){
+    animation-delay: .3s;
+}
+
+.preloader span:nth-child(3){
+    animation-delay: .45s;
+}
+
+.preloader span:nth-child(4){
+    animation-delay: .6s;
+}
+
+.preloader span:last-child{
+    animation-delay: .75s;
+}
+
+
+@keyframes upDown{
+    0%{
+        height:15px;
+        background:#f5c6ab; 
+    }
+    50%{
+        height:60px;
+        background:#ff5f02;
+    }
+    100%{
+        height:15px;
+        background:#db8756;
+    }
+}
+
+.loader {
+    position: absolute;
+    top:550px;
+    left:885px;
+    display: flex;
+    color:#344051;
+    font-size: 23px;
+}
+
+.loader.animate__bounce{
+    animation-iteration-count: infinite;
+}
+
 nav{
    width: 100%;
    height: 60px;
-   background: #344051
+   background: #344051;
+   position:fixed;
+    z-index: 1;
 }
 
 .logo{
@@ -12,7 +84,13 @@ nav{
    font-size: 28px;
    line-height: 60px;
    padding-left:388px;
-   float: left;   
+   float: left; 
+    animation: comming 2s ease;
+}
+
+main{
+   width: 100%;
+    height:100%;
 }
 
 .menu{
@@ -26,11 +104,13 @@ nav{
     color:#fff;
     margin-right: 40px;
     font-size: 16px;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
 
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100% ;
     background: url(../img/boy.png)90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
 }
 
@@ -39,6 +119,9 @@ nav{
     margin:432px 0px 0px 404px;
     color:#2c384a;
     text-align: center;
+    opacity: 0;
+    animation: titlemove 1s ease forwards;
+    animation-delay: 2.4s;
 }
 
 .title__container h1{
@@ -63,7 +146,91 @@ nav{
     padding: 0px 16px;
     margin:58px 28px 0px 14px;
 }    
-    
+   
+.menu li a{
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:visited{
+    color: white;
+}
+
+.menu li a:hover{
+    color: orange;
+}
+
+.menu li a:active{
+    transform: scale(1.1);
+}
+
+.title__container input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.title__container input:hover{
+    background: #344051;
+    color: white;
+}
+
+.title__container input:active{
+    transform: scale(1.1);
+}
+
+@keyframes comming{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes topshift{
+    from{
+        opacity:0;
+        margin-top:-80px;
+    }
+    to{
+        opacity:1;
+        margin-top:0px;
+    }
+}
+
+.menu li:nth-child(2){
+    animation-delay:0.4s;
+}
+
+.menu li:nth-child(3){
+    animation-delay:0.8s;
+}
+
+.menu li:nth-child(4){
+    animation-delay:1.2s;
+} 
+
+.menu li:nth-child(5){
+    animation-delay:1.6s;
+} 
+
+.menu li:nth-child(6){
+    animation-delay:2s;
+}
+
+@keyframes titlemove{
+    from{
+        opacity:0;
+        margin-left:-500px;
+    }
+    to{
+        opacity:1;
+        margin-left:404px;
+    }
+}
+
 .obomne h2{
     text-align: center;
     font-size: 27px;
@@ -72,7 +239,7 @@ nav{
     font-weight: 600; 
 }
 
-.cherta img{
+.cherta_1 img{
     padding: 5px 0px 0px 60px;
 }
 
@@ -84,6 +251,18 @@ nav{
     font-size: 18px;
     color:#3f495a;
     margin:23px 500px 0px 520px;
+    opacity: 0;
+    animation: obomnemove 1s ease forwards;
+    animation-delay: 3.5s;
+}
+
+@keyframes obomnemove{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
 }
 
 .obomne input{
@@ -97,10 +276,21 @@ nav{
     padding: 12px 18px;
     margin:36px 0px 97px 870px;
     font-weight: 600;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.obomne input:hover{
+     background: #344051;
+    color: white;
+}
+
+.obomne input:active{
+    transform: scale(1.1);
 }
 
 .shtoumeu{
-    background: url(../img/bg2.jpg) center/cover no-repeat; 
+    background: url(../img/bg2.jpg) center/cover no-repeat;
     width: 100%;
     height:522px;
 }
@@ -113,7 +303,7 @@ nav{
     font-weight: 600;
 }
 
-.herta img{
+.cherta_2 img{
     padding: 30px 0px 20px 900px;
 }
 
@@ -129,7 +319,11 @@ nav{
 
 .block img{
     padding-top: 80px;
-	padding-bottom: 20px;	
+	padding-bottom: 20px;
+}
+
+.block img:hover{
+    transform: scale(1.1);
 }
 
 .shtoumeu p{
@@ -154,7 +348,7 @@ nav{
     font-weight: 600;
 }
 
-.certa img{
+.cherta_3 img{
    margin: 30px 0px 20px 895px;
    
 }
@@ -165,8 +359,8 @@ nav{
     color:#3f495a;
 }
 
-.keic img{
-    margin-top: 30px;
+.kart img{
+     margin-top: 30px;
 }
 
 .keic h3{
@@ -216,6 +410,14 @@ nav{
     width: 180px;
 }
 
+.keic input:hover{
+    background-color: #3f495a;
+}
+
+.keic input:active{
+    transform: scale(1.1);
+}
+
 .stoimost h2{
     text-align: center;
     font-size: 27px;
@@ -254,7 +456,9 @@ nav{
 }
 
 .statistica{
-    background: url(../img/bg3.jpg) center/cover no-repeat; 
+    background: url(../img/bg3.jpg) center/cover
+        no-repeat; 
+    background-attachment: fixed;
     width: 100%;
     height:500px;
     margin-top: 150px; 
@@ -268,7 +472,7 @@ nav{
     font-weight: 600;
 }
 
-.hcerta img{
+.cherta_4 img{
     padding: 25px 0px 0px 900px;
 }
 
@@ -287,6 +491,10 @@ nav{
 	margin-bottom: 90px;	
 }
 
+.bloc img:hover{
+ transform: scale(1.1);
+}
+
 .bloc{
     margin-left: 290px;
 }
@@ -299,7 +507,7 @@ nav{
     font-weight: 600;
 }
 
-.zag {
+.cherta_5 {
   margin: 10px 20px 30px 10px;
 }
 
@@ -388,10 +596,17 @@ margin: 40px 0px 0px 20px;
  margin:5px 0px 0px 565px;
 }
 
+.soob input:focus{
+    border: 2px solid orange;
+}
+
 .vvod{
     margin-left: 545px;
 }
 
+.vvod input:focus{
+    border: 2px solid orange;
+}
 .otpravit input{
     height: 40px;
     text-align: center;
@@ -404,6 +619,15 @@ margin: 40px 0px 0px 20px;
     margin:10px 28px 0px 870px;
     width: 130px;
     font-weight: 600;
+    transition: all 0.2s;
+    transform: scale(1);
 }
 
+.otpravit input:hover{
+    border-color: orange;
+    color: orange;
+}
   
+.otpravit input:active{
+    transform: scale(1.1);
+}
