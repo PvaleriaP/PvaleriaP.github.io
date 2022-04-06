@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('FranklinGothic-Medium.eot');
+    src: url('FranklinGothic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('FranklinGothic-Medium.woff2') format('woff2'),
+        url('FranklinGothic-Medium.woff') format('woff'),
+        url('FranklinGothic-Medium.ttf') format('truetype'),
+        url('FranklinGothic-Medium.svg#FranklinGothic-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
 body{
     font-family: Arial, sans-serif;
 }
@@ -65,6 +77,7 @@ body{
     display: flex;
     color:#344051;
     font-size: 23px;
+    text-align: center;
 }
 
 .loader.animate__bounce{
@@ -76,16 +89,16 @@ nav{
    height: 60px;
    background: #344051;
    position:fixed;
-    z-index: 1;
+   z-index: 10;
 }
 
 .logo{
    color:#fff;
    font-size: 28px;
    line-height: 60px;
-   padding-left:388px;
    float: left; 
     animation: comming 2s ease;
+    font-family:'Franklin Gothic', sans-serif;
 }
 
 main{
@@ -95,7 +108,7 @@ main{
 
 .menu{
    float: left;
-   padding-left:432px;
+
 }
 
 .menu li{
@@ -103,7 +116,7 @@ main{
     line-height: 60px;
     color:#fff;
     margin-right: 40px;
-    font-size: 16px;
+    font-size: 14px;
     animation: topshift 0.4s ease forwards;
     opacity: 0;
 }
@@ -116,17 +129,17 @@ main{
 
 .title__container{
     float:left;
-    margin:432px 0px 0px 404px;
     color:#2c384a;
     text-align: center;
     opacity: 0;
     animation: titlemove 1s ease forwards;
-    animation-delay: 2.4s;
+    animation-delay: 2.4s; 
 }
 
 .title__container h1{
-   font-size: 60px;
-   font-weight: bold;
+   font-size: 72px;
+   font-weight: 600;
+   font-family:Arial, sans-serif;
 }
 
 .title__container h4{
@@ -227,30 +240,59 @@ main{
     }
     to{
         opacity:1;
-        margin-left:404px;
+        margin-left:0px;
     }
+}
+
+.white-btn:visited{
+    color:white; 
+}
+
+@media (max-width:991px){
+    .title__container, .title__container h4, .title__container input{
+        color:white;
+        position:relative;
+        z-index: 3;
+    }
+    .title__container input{
+        border: 2px solid #fff; 
+    }
+    .main{
+        position:relative;
+    }
+    .main:after{
+        content:"";
+        bottom:0;
+        top:0;
+        left:0;
+        right:0;
+        position:absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+    
 }
 
 .obomne h2{
     text-align: center;
     font-size: 27px;
-    margin:108px 0px 0px 0px;
+    margin:108px 0px 0px 0px; 
     color:#263244;
     font-weight: 600; 
 }
 
 .cherta_1 img{
-    padding: 5px 0px 0px 60px;
+    padding: 30px 0px 0px 60px;
 }
 
-.obomne img{
-    margin: 30px 0px 10px 835px;
+.photo{
+    margin: 60px 0px 10px 0px;
 }
 
 .obomne p{
     font-size: 18px;
     color:#3f495a;
-    margin:23px 500px 0px 520px;
+   margin:23px 0px 0px 0px;
     opacity: 0;
     animation: obomnemove 1s ease forwards;
     animation-delay: 3.5s;
@@ -274,7 +316,7 @@ main{
     color:#6f707e;
     font-size:13px;
     padding: 12px 18px;
-    margin:36px 0px 97px 870px;
+    margin:36px 0px 97px 0px;
     font-weight: 600;
     transition: all 0.2s;
     transform: scale(1);
@@ -289,6 +331,18 @@ main{
     transform: scale(1.1);
 }
 
+.colsize_img{
+    margin-left: 550px;
+}
+
+.colsize_p{
+    margin-left: 230px;
+}
+
+.colsize_input{
+   margin-left: 570px; 
+}
+
 .shtoumeu{
     background: url(../img/bg2.jpg) center/cover no-repeat;
     width: 100%;
@@ -297,14 +351,14 @@ main{
 
 .shtoumeu h2{
     text-align: center;
-    font-size: 23px;
+    font-size: 27px;
     padding: 100px 0px 0px 18px;
     color:#2c384a;
     font-weight: 600;
 }
 
 .cherta_2 img{
-    padding: 30px 0px 20px 900px;
+    padding: 30px 0px 20px 0px;
 }
 
 .shtoumeu h3{
@@ -312,7 +366,6 @@ main{
     font-size: 16px;
     color:#cf7600;
     font-weight: 600;
-    margin: 0px 50px 0px 50px;
 	width:250px;
 	text-align: center;
 }
@@ -326,6 +379,10 @@ main{
     transform: scale(1.1);
 }
 
+.block h3{
+    margin:0px 20px 0px 20px;
+}
+
 .shtoumeu p{
     float: left;
     text-align: center;
@@ -336,8 +393,12 @@ main{
     margin: 10px 10px 0px 10px;
 }
 
-.block{
-    margin-left: 230px;
+.colsize-block{
+    margin-left: 70px;
+}
+
+.colsize-cherta2{
+    margin-left: 620px;
 }
 
 .keic h2{
@@ -349,8 +410,11 @@ main{
 }
 
 .cherta_3 img{
-   margin: 30px 0px 20px 895px;
-   
+   margin: 30px 0px 40px 0px;
+}
+
+.colsize-cherta3{
+    margin-left: 612px;
 }
 
 .keic p{
@@ -359,42 +423,55 @@ main{
     color:#3f495a;
 }
 
+.colp{
+  margin-left: 200px;  
+}
+
 .kart img{
      margin-top: 30px;
+    position:relative;
+    width: 80%;
 }
 
 .keic h3{
     font-size: 20px;
-    margin:0px 0px 0px 400px;
     color:#384354;
     font-weight: 600;
 }
 
 .keic h4{
     font-size: 15px;
-    margin:10px 0px 10px 400px;
+    margin:10px 0px 10px 0px;
     color:#3f495a;
     font-weight: 600; 
 }
 
 .keic h5{
     font-size: 20px;
-    margin:0px 0px 0px 400px;
     color:#384354;
     font-weight: 600;
 }
 
 .cl{
+    width: 800px;
+}
+
+.colsize-cl{
+    margin-left: 100px;
     float:left;
     width: 800px;
 }
 
 .naz p{
     color:#3f495a;
-    margin: 10px 0px 0px 600px;
+    margin: 10px 0px 0px 0px;
     font-size: 19px;
     text-align:justify;
     width: 850px;
+}
+
+.colsize-naz{
+    
 }
 
 .keic input{
@@ -406,7 +483,7 @@ main{
     font-size:15px;
     font-weight: 600;
     padding: 0px 16px;
-    margin:5px 28px 0px 400px;
+    margin:5px 28px 0px 0px;
     width: 180px;
 }
 

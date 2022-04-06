@@ -6,13 +6,17 @@
 <meta name="description"content="Моя первая страница">
 <meta name="autor"content="Valeria">
 <meta name="robots"content="all">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta property="og:title"content="Моя первая страница">
 
 <title>Петушенко Валерия - Веб-разработчик</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/font-awesome.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/animate.min.css">
+
 </head>
 
 <body>
@@ -28,45 +32,97 @@
 
 <header> 
 <nav>
-    <div class="logo">Петушенко Валерия</div>
-    <div class="menu">
+   <div class="container">
+       <div class="row">
+          <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Валерия</div></div>
+          <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl- offset-lg-1 d-none d-lg-block"> 
+          <div class="menu">
     <ul>
-        <li><a href="#">ОБО МНЕ</a></li>
+    <li><a href="#">ОБО МНЕ</a></li>
     <li><a href="#">УСЛУГИ</a></li>
     <li><a href="#">КЕЙСЫ</a></li>
     <li><a href="#">ПРАЙС</a></li>
     <li><a href="#">ОТЗЫВЫ</a></li>
     <li><a href="#">КОНТАКТЫ</a></li>
-        </ul></div>
+    </ul>
+    </div>
+      </div>
+      <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+       <div class="dropdown">
+  <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+  Навигация
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+     <li><a class="dropdown-item" href="#">ОБО МНЕ</a></li>
+    <li><a class="dropdown-item" href="#">УСЛУГИ</a></li>
+    <li><a class="dropdown-item" href="#">КЕЙСЫ</a></li>
+    <li><a class="dropdown-item" href="#">ПРАЙС</a></li>
+    <li><a class="dropdown-item" href="#">ОТЗЫВЫ</a></li>
+    <li><a class="dropdown-item" href="#">КОНТАКТЫ</a></li>
+  </ul>
+</div>
+    </div>
+     
+       </div>
+   </div>
+    
+   
 </nav>
 </header>
 
 <main>
-<section class="main"><div class="title__container">
+<section class="main">
+  <div class="container h-100">
+  <div class="row align-items-center h-100">
+  <div class="col-lg-8 mt-5 pt-5">
+      <div class="title__container mt-5">
     <h1>Привет<br>Я Петушенко Валерия</h1>
     <h4>Фулл стек веб-разработчик</h4>
     <input type="button" value="Обо мне">
     <input type="button" value="Мои работы">
     </div>
+  </div>
+  </div>
+  </div>
+   
     </section>
     </main>
-    
-    <div class="obomne">
-    <h2>ОБО МНЕ</h2>
+    <div class="container ">
+        <div class="row ">
+         <div class="obomne">
+         <h2>ОБО МНЕ</h2>
+        <div class="col-xl-2 col-lg-4 colsize_img"> 
     <div class="cherta_1">
     <img src="img/chertazagolovka.png">
     </div>
+    <div class="photo">
     <img src="img/photo.png"alt="аватарка">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laboriosam optio nesciunt cum obcaecati harum, cupiditate assumenda, quam reiciendis quisquam.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laboriosam optio nesciunt cum obcaecati harum, cupiditate assumenda, quam reiciendis quisquam.</p>
-     <input type="submit"value="Скачать резюме">
+    </div>
+    </div>
+     <div class="col-xxl-8 col-lg-8 colsize_p"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laboriosam optio nesciunt cum obcaecati harum, cupiditate assumenda, quam reiciendis quisquam.</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laboriosam optio nesciunt cum obcaecati harum, cupiditate assumenda, quam reiciendis quisquam.</p>
+     </div>
+     <div class="col-xxl-2 col-xl-2 colsize_input"> 
+    <input type="submit"value="Скачать резюме">
+    </div>
+    </div>
+    </div>
     </div>
      
     <div class="shtoumeu">
       <h2>ЧТО Я УМЕЮ</h2>
-      <div class="cherta_2">
+      <div class="container">
+        <div class="row">
+        <div class="col-2 colsize-cherta2">
+        <div class="cherta_2">
       <img src="img/chertazagolovka.png">
       </div>
+        </div>
+          </div>
+      </div>
+      <div class="container">
+      <div class="row">
+      <div class="col-12 colsize-block">
       <div class="block">
 	 <h3><img src="img/noutbuk.png"alt="картинка"><br>Веб-дизайн<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, officia!</p></h3>
      <h3><img src="img/znak.png"alt="картинка"><br>Разработка<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, hic.</p></h3>
@@ -74,16 +130,31 @@
      <h3><img src="img/gromofon.png"alt="картинка"><br>Маркетинг<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, recusandae.</p></h3>
     </div> 
     </div>
+    </div>
+    </div>
+    </div>
     
     <div class="keic">
     <h2>КЕЙСЫ</h2>
+     <div class="container">
+      <div class="row">
     <div class="cherta_3">
+    <div class="col-2 colsize-cherta3">
     <img src="img/chertazagolovka.png">
     </div>
+    </div>
+    <div class="col-8 colp">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam rem sit aperiam, facere modi a.</p>
+    </div>
+     </div>
+    </div>
     <div class="kart">
     <img src="img/kartinka.png">
         </div>
+    
+    <div class="container">
+    <div class="row">
+    <div class="col-3 colsize-cl">
     <div class="cl">
     <h3>CLIENT:</h3>
     <h4>Какая-то компания</h4>
@@ -91,12 +162,16 @@
     <h4>http://www.somedormain.com</h4>
     <br><input type="submit"value="VISIT LIVE SITE">
     </div>
+    </div>
+    <div class="col-9 colsize-naz">
     <div class="naz">
     <h3>Название проекта</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore iusto illo esse nam laboriosam sint a amet quidem, odio laborum quas mollitia nisi nostrum molestiae et, fugit ea impedit, quis placeat consectetur laudantium neque vero.</p>
     </div>
    </div>
-    
+   </div>
+    </div>
+    </div>
     <div class="stoimost">
     <h2>Расчёт стоимости</h2>
     <div class="pun">
@@ -165,5 +240,6 @@
         </form>
         </div>
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
