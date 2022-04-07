@@ -72,11 +72,10 @@ body{
 
 .loader {
     position: absolute;
-    top:550px;
-    left:885px;
-    display: flex;
+    top:57%;
+    left:47%;
     color:#344051;
-    font-size: 23px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -270,11 +269,9 @@ main{
         background: rgba(0,0,0,0.4);
         z-index: 1;
     }
-    
 }
 
 .obomne h2{
-    text-align: center;
     font-size: 27px;
     margin:108px 0px 0px 0px; 
     color:#263244;
@@ -282,7 +279,7 @@ main{
 }
 
 .cherta_1 img{
-    padding: 30px 0px 0px 60px;
+    padding-top: 30px;
 }
 
 .photo{
@@ -331,26 +328,13 @@ main{
     transform: scale(1.1);
 }
 
-.colsize_img{
-    margin-left: 550px;
-}
-
-.colsize_p{
-    margin-left: 230px;
-}
-
-.colsize_input{
-   margin-left: 570px; 
-}
-
-.shtoumeu{
+.consh{
     background: url(../img/bg2.jpg) center/cover no-repeat;
-    width: 100%;
+    width:100%;
     height:522px;
 }
 
 .shtoumeu h2{
-    text-align: center;
     font-size: 27px;
     padding: 100px 0px 0px 18px;
     color:#2c384a;
@@ -380,7 +364,8 @@ main{
 }
 
 .block h3{
-    margin:0px 20px 0px 20px;
+    margin-left:30px;
+    margin-right: 40px;
 }
 
 .shtoumeu p{
@@ -391,14 +376,6 @@ main{
     color:#3f495a;
     width: 100%;
     margin: 10px 10px 0px 10px;
-}
-
-.colsize-block{
-    margin-left: 70px;
-}
-
-.colsize-cherta2{
-    margin-left: 620px;
 }
 
 .keic h2{
@@ -413,18 +390,9 @@ main{
    margin: 30px 0px 40px 0px;
 }
 
-.colsize-cherta3{
-    margin-left: 612px;
-}
-
 .keic p{
-    text-align: center;
     font-size: 18px;
     color:#3f495a;
-}
-
-.colp{
-  margin-left: 200px;  
 }
 
 .kart img{
@@ -453,13 +421,8 @@ main{
 }
 
 .cl{
-    width: 800px;
-}
-
-.colsize-cl{
-    margin-left: 100px;
-    float:left;
-    width: 800px;
+    width: 350px;
+    float: left;
 }
 
 .naz p{
@@ -467,11 +430,7 @@ main{
     margin: 10px 0px 0px 0px;
     font-size: 19px;
     text-align:justify;
-    width: 850px;
-}
-
-.colsize-naz{
-    
+    width: 1100px;
 }
 
 .keic input{
@@ -496,16 +455,15 @@ main{
 }
 
 .stoimost h2{
-    text-align: center;
     font-size: 27px;
-    margin:108px 0px 0px 0px;
+    margin-top:108px;
     color:#263244;
     font-weight: 600;
 }
 
 .pun h3{
     font-size: 20px;
-    margin:50px 0px 0px 498px;
+    margin-top:50px;
     color:#1c2534;
     font-weight: 600;
 }
@@ -514,7 +472,7 @@ main{
     background-color: #eeeeee;
     width: 880px; 
     height: 50px;
-    margin: 22px 0px 0px 494px;
+    margin-top: 22px;
     color:#737373;
     padding:0px 20px;
     border: 1px solid #eeeeee;
@@ -522,27 +480,45 @@ main{
 }
 
 .stoimost img{
-    margin: 20px 0px 5px 490px;
+    margin: 20px 0px 5px 0px;
 }
 
 .stoimost h4{
     font-size:15px;
     font-weight: 600;
-    margin:15px 0px 0px 496px;
+    margin:15px 0px 0px 0px;
     color:#1c2534;
 }
 
-.statistica{
+.stoimost input{
+     height: 40px;
+   
+    background-color: #63b5ae;
+    border-radius: 5px;
+    color:#ffffff;
+    font-size:15px;
+    font-weight: 600;
+    padding: 0px 16px;
+    margin-top:20px;
+}
+
+.stoimost input:hover{
+    background-color: #3f495a;
+}
+
+.stoimost input:active{
+    transform: scale(1.1);
+}
+
+.const{
     background: url(../img/bg3.jpg) center/cover
         no-repeat; 
     background-attachment: fixed;
-    width: 100%;
     height:500px;
-    margin-top: 150px; 
+    margin-top: 50px; 
 }
 
 .statistica h2{
-    text-align: center;
     font-size: 27px;
     padding: 100px 0px 0px 0px;
     color:#263244;
@@ -550,7 +526,7 @@ main{
 }
 
 .cherta_4 img{
-    padding: 25px 0px 0px 900px;
+    padding: 25px 0px 0px 0px;
 }
 
 .bloc h4{ 
@@ -558,9 +534,8 @@ main{
     font-size: 16px;
     color:#323e4f;
     font-weight: 600;
-    margin: 90px 140px 10px 0px;
+    margin: 90px 0px 10px 80px;
 	width:210px;
-	text-align: center;
 }
 
 .bloc img{
@@ -572,12 +547,7 @@ main{
  transform: scale(1.1);
 }
 
-.bloc{
-    margin-left: 290px;
-}
-
 .otz h2{
-    text-align: center;
     font-size: 27px;
     margin:108px 0px 0px 0px;
     color:#263244;
@@ -585,25 +555,22 @@ main{
 }
 
 .cherta_5 {
-  margin: 10px 20px 30px 10px;
+  margin: 30px 0px 0px 0px;
 }
 
-.otz img{
-    margin: 20px 0px 20px 885px;
+.photo2{
+    margin-top: 40px;
 }
 
 .otz p{
     color: #243042;
     font-size: 18px;
-    margin:23px 500px 35px 520px;
-    text-align: center;
+    margin:23px 0px 35px 0px;
 }
 
 .otz span{
     color: #243042;
     font-size: 18px;
-    margin:0px 500px 0px 780px;
-    text-align: center;
 }
 
 .podval{
@@ -624,15 +591,14 @@ main{
 .podval p{
     color:#ffffff;
     font-size: 18px;
-    margin:70px 500px 35px 520px;
-    text-align: center;
+    margin:20px 0px 35px 0px;
 }
 
 .podval h4{
     float: left;
     font-size: 16px;
     color:#ffffff;
-    margin: 20px 0px 60px 30px;
+    margin: 20px 0px 20px 0px;
 	width:180px;
 	text-align: center;
 }
@@ -644,15 +610,14 @@ main{
 }
 
 .blok{
-    height: 110px;
-    margin-left: 600px;
+    height: px;
 }
 
 .podval h3{
     font-size: 20px;
     color:#ffffff;
     font-weight: 600;
-    margin:10px 600px 0px 0px;
+    margin:5px 0px 0px 0px;
 }
 
 .podval input{
@@ -693,7 +658,7 @@ margin: 40px 0px 0px 20px;
     color:#ffffff;
     font-size:15px;
     padding: 0px 16px;
-    margin:10px 28px 0px 870px;
+    margin:10px 28px 0px 0px;
     width: 130px;
     font-weight: 600;
     transition: all 0.2s;
