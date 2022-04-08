@@ -331,12 +331,12 @@ main{
 .consh{
     background: url(../img/bg2.jpg) center/cover no-repeat;
     width:100%;
-    height:522px;
+    padding: 107px 0px 90px 0px;
 }
 
 .shtoumeu h2{
     font-size: 27px;
-    padding: 100px 0px 0px 18px;
+    padding: 0px 0px 0px 18px;
     color:#2c384a;
     font-weight: 600;
 }
@@ -352,6 +352,10 @@ main{
     font-weight: 600;
 	width:250px;
 	text-align: center;
+}
+
+.block{
+  width: 100%;  
 }
 
 .block img{
@@ -396,7 +400,7 @@ main{
 }
 
 .kart img{
-     margin-top: 30px;
+    margin-top: 30px;
     position:relative;
     width: 80%;
 }
@@ -421,8 +425,12 @@ main{
 }
 
 .cl{
-    width: 350px;
     float: left;
+}
+
+.naz{
+    padding-left:20px;
+    max-width: 100%;
 }
 
 .naz p{
@@ -430,7 +438,7 @@ main{
     margin: 10px 0px 0px 0px;
     font-size: 19px;
     text-align:justify;
-    width: 1100px;
+    width: 760px;
 }
 
 .keic input{
@@ -443,7 +451,7 @@ main{
     font-weight: 600;
     padding: 0px 16px;
     margin:5px 28px 0px 0px;
-    width: 180px;
+    width: 200px;
 }
 
 .keic input:hover{
@@ -470,13 +478,17 @@ main{
 
 .pun select{
     background-color: #eeeeee;
-    width: 880px; 
+    width: 100%; 
     height: 50px;
     margin-top: 22px;
     color:#737373;
     padding:0px 20px;
     border: 1px solid #eeeeee;
     font-weight: 600;
+}
+
+.colsize-h4{
+    padding-left: 18%;
 }
 
 .stoimost img{
@@ -492,7 +504,6 @@ main{
 
 .stoimost input{
      height: 40px;
-   
     background-color: #63b5ae;
     border-radius: 5px;
     color:#ffffff;
@@ -514,13 +525,12 @@ main{
     background: url(../img/bg3.jpg) center/cover
         no-repeat; 
     background-attachment: fixed;
-    height:500px;
+   padding: 135px 0px 103px 0px;
     margin-top: 50px; 
 }
 
 .statistica h2{
     font-size: 27px;
-    padding: 100px 0px 0px 0px;
     color:#263244;
     font-weight: 600;
 }
@@ -534,8 +544,7 @@ main{
     font-size: 16px;
     color:#323e4f;
     font-weight: 600;
-    margin: 90px 0px 10px 80px;
-	width:210px;
+    margin: 90px 0px 10px 9%;
 }
 
 .bloc img{
@@ -573,10 +582,10 @@ main{
     font-size: 18px;
 }
 
-.podval{
+.conpod{
     background: url(../img/bg4.jpg) center/cover no-repeat; 
     width: 100%;
-    height:807px;
+    padding: 105px 0px 168px 0px;
     margin-top: 150px; 
 }
 
@@ -585,7 +594,6 @@ main{
     font-size: 27px;
     color:#ffffff;
     font-weight: 600;
-    padding:105px 0px 0px 0px;
 }
  
 .podval p{
@@ -609,10 +617,6 @@ main{
 	margin-bottom: 20px;	
 }
 
-.blok{
-    height: px;
-}
-
 .podval h3{
     font-size: 20px;
     color:#ffffff;
@@ -621,34 +625,35 @@ main{
 }
 
 .podval input{
- background-color:rgba(218, 221, 227,1); 
+ background-color:rgba(218, 221, 227,0.9); 
  width: 350px; 
  height: 34px;
- margin-right:20px; 
+ margin-right:0px; 
  color:#5d5d5e;
  font-weight: 600;
  padding-left: 10px;
-margin: 40px 0px 0px 20px;
+margin-top: 40px;
 }
 
 .soob input{
  padding-bottom: 55px;
- width: 724px; 
+ width: 100%; 
  height: 93px;
- margin:5px 0px 0px 565px;
+ margin:5px 0px 0px 0px;
 }
 
 .soob input:focus{
     border: 2px solid orange;
 }
 
-.vvod{
-    margin-left: 545px;
-}
-
 .vvod input:focus{
     border: 2px solid orange;
 }
+
+.vvod input{
+     width: 100%; 
+}
+
 .otpravit input{
     height: 40px;
     text-align: center;
@@ -658,7 +663,7 @@ margin: 40px 0px 0px 20px;
     color:#ffffff;
     font-size:15px;
     padding: 0px 16px;
-    margin:10px 28px 0px 0px;
+    margin-top:10px;
     width: 130px;
     font-weight: 600;
     transition: all 0.2s;
