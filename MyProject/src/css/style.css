@@ -429,7 +429,6 @@ main{
 }
 
 .naz{
-    padding-left:20px;
     max-width: 100%;
 }
 
@@ -438,7 +437,7 @@ main{
     margin: 10px 0px 0px 0px;
     font-size: 19px;
     text-align:justify;
-    width: 760px;
+    width: 100%;
 }
 
 .keic input{
@@ -450,7 +449,7 @@ main{
     font-size:15px;
     font-weight: 600;
     padding: 0px 16px;
-    margin:5px 28px 0px 0px;
+    margin:5px 28px 10px 0px;
     width: 200px;
 }
 
@@ -493,6 +492,7 @@ main{
 
 .stoimost img{
     margin: 20px 0px 5px 0px;
+    max-width: 100%;
 }
 
 .stoimost h4{
@@ -544,12 +544,12 @@ main{
     font-size: 16px;
     color:#323e4f;
     font-weight: 600;
-    margin: 90px 0px 10px 9%;
+    margin: 90px 0px 10px 20%;
 }
 
 .bloc img{
 	position:relative;
-	margin-bottom: 90px;	
+	margin-bottom: 120px;	
 }
 
 .bloc img:hover{
