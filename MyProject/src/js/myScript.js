@@ -1,5 +1,4 @@
 "use strict"
-
 let tip=prompt("Какой тип сайта вам нужен? 0-сайт визитка(200p) 1-корпоротивный сайт(800p) 2-интернет магазин(1000p)");
 console.log(tip);
 
@@ -87,9 +86,66 @@ else if(verst==1){
 
 let calc=tip+diz+verst;
 
-
-
 alert(calc);
 console.log(calc);
 alert(sroc);
 
+$(document).ready(function(){
+let options={threshold:[0.2]};
+let observer=new IntersectionObserver(OnEntry, options);
+let elements=$('.pAnimation');
+elements.each((i,el) => {
+observer.observe(el);
+});
+});
+
+function onEntry(entry){
+entry.forEach(change => {
+if(change.isIntersecting){
+change.target.classList.add('show-animation');
+}
+});
+}
+
+//для цифр в Статистике//
+$(document).ready(function(){
+let options={threshold:[0.2]};
+let observer=new IntersectionObserver(OnEntry, options);
+let elements=$('.');
+elements.each((i,el) => {
+observer.observe(el);
+});
+});
+
+function onEntry(entry){
+entry.forEach(change => {
+if(change.isIntersecting){
+change.target.classList.add('show-animation');
+}
+});
+}
+
+//Не робит//
+$(document).ready(function(){
+    $(window).scroll(()=>{
+    let scrollDistance=$(window).scrollTop();
+    $(".section").each((i, el) => {
+   if($(el).offset().top - $("menu").outerHeight()<= scrollDistance){
+   $("menu a").each((i, el) => {
+   if($(el).hasClass("active")){
+    $(el).removeClass("active");
+    }
+    });
+    $('menu li:eq('+ i +')').find('a').addClass('active');
+    }
+    });
+    });
+});
+     
+//1 фото прилипло правым краем ко 2. _.//
+$('.kart').slick();
+
+//не сработало//
+$(document).ready(function() {
+  $('.kart').magnificPopup({type:'image'});
+});

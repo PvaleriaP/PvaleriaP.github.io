@@ -286,7 +286,7 @@ main{
     margin: 60px 0px 10px 0px;
 }
 
-.obomne p{
+.pAnimation{
     font-size: 18px;
     color:#3f495a;
    margin:23px 0px 0px 0px;
@@ -400,6 +400,7 @@ main{
 }
 
 .kart img{
+    text-align: center;
     margin-top: 30px;
     position:relative;
     width: 80%;
@@ -549,7 +550,11 @@ main{
 
 .bloc img{
 	position:relative;
-	margin-bottom: 120px;	
+	margin-bottom: 50px;	
+}
+
+.bloc >p{
+   font-size: 25; 
 }
 
 .bloc img:hover{

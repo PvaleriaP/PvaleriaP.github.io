@@ -16,6 +16,8 @@
 <link rel="stylesheet" href="css/font-awesome.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
 
 </head>
 
@@ -37,17 +39,21 @@
 <nav>
    <div class="container">
        <div class="row">
-          <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Валерия</div></div>
+          <div class="col-xxl-2 col-lg-3 col-7">
+          <div class="logo">Валерия</div>
+          </div>
           <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl- offset-lg-1 d-none d-lg-block"> 
           <div class="menu">
+          <nav class navbar>
     <ul>
-    <li><a href="#">ОБО МНЕ</a></li>
-    <li><a href="#">УСЛУГИ</a></li>
-    <li><a href="#">КЕЙСЫ</a></li>
-    <li><a href="#">ПРАЙС</a></li>
-    <li><a href="#">ОТЗЫВЫ</a></li>
-    <li><a href="#">КОНТАКТЫ</a></li>
+    <li><a href="#ОБО_МНЕ">ОБО МНЕ</a></li>
+    <li><a href="#ЧТО_Я_УМЕЮ">УСЛУГИ</a></li>
+    <li><a href="#КЕЙСЫ">КЕЙСЫ</a></li>
+    <li><a href="#СТОИМОСТЬ">ПРАЙС</a></li>
+    <li><a href="#ОТЗЫВЫ">ОТЗЫВЫ</a></li>
+    <li><a href="#КОНТАКТЫ">КОНТАКТЫ</a></li>
     </ul>
+    </nav>
     </div>
       </div>
       <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
@@ -88,8 +94,9 @@
   </div>
   </div>
     </section>
-    
     </main>
+    
+    <section class="section" id="ОБО_МНЕ">
     <div class="container">
          <div class="obomne">
          <div class="row justify-content-center">
@@ -113,8 +120,8 @@
     </div>     
      <div class="row justify-content-center"> 
      <div class="col-xxl-8 col-lg-8 text-center">
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laboriosam optio nesciunt cum obcaecati harum, cupiditate assumenda, quam reiciendis quisquam.</p>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laboriosam optio nesciunt cum obcaecati harum, cupiditate assumenda, quam reiciendis quisquam.</p>
+     <p class="pAnimation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laboriosam optio nesciunt cum obcaecati harum, cupiditate assumenda, quam reiciendis quisquam.</p>
+     <p class="pAnimation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laboriosam optio nesciunt cum obcaecati harum, cupiditate assumenda, quam reiciendis quisquam.</p>
      </div>
      </div>
     <div class="row justify-content-center ">
@@ -124,7 +131,9 @@
     </div>
     </div>
     </div>
+    </section>
     
+    <section class="section" id="ЧТО_Я_УМЕЮ">
     <div class="container-fluid consh">
      <div class="container">
     <div class="shtoumeu">
@@ -153,7 +162,9 @@
      </div>
     </div>
     </div>
+    </section>
     
+    <section class="section" id="КЕЙСЫ">
      <div class="keic">
     <div class="container">
       <div class="row justify-content-center">
@@ -174,8 +185,10 @@
     </div>
     </div>
     </div>
+   
     <div class="kart">
-    <img src="img/kartinka.png">
+    <img src="img/kartinka.png" href="img/kartinka.png">
+    <img src="https://sun9-6.userapi.com/c854428/v854428195/17acbb/6f7a_zcjZq4.jpg" href="https://sun9-6.userapi.com/c854428/v854428195/17acbb/6f7a_zcjZq4.jpg">
         </div>
         <div class="container">
         <div class="row justify-content-center">
@@ -196,8 +209,10 @@
     </div>
      </div>
     </div>
-    </div>
+        </div>
+    </section>
     
+     <section class="section" id="СТОИМОСТЬ">
     <div class="stoimost">
     <div class="container">
     <div class="row justify-content-center">
@@ -241,6 +256,7 @@
     </div>
     </div>
      </div>
+     </section>
     
     <div class="statistica">
     <div class="container-fluid const">
@@ -260,16 +276,16 @@
     <div class="bloc">
     <div class="row justify-content-center">
     <div class="col-12 col-md-3 text-center">
-    <h4><img src="img/smile.png"alt="картинка"><br>СЧАСТЛИВЫХ КЛИЕНТОВ</h4>
+        <h4><img src="img/smile.png"alt="картинка"><p>0</p><br>СЧАСТЛИВЫХ КЛИЕНТОВ</h4>
         </div>
         <div class="col-12 col-md-3 text-center">
-    <h4><img src="img/skobki.png"alt="картинка"><br>ЧАСОВ РАБОТЫ</h4>
+    <h4><img src="img/skobki.png"alt="картинка"><p>50</p><br>ЧАСОВ РАБОТЫ</h4>
         </div>
     <div class="col-12 col-md-3 text-center">
-    <h4><img src="img/galka.png"alt="картинка"><br>ПРОЕКТОВ ЗАВЕРШЕНО</h4>
+    <h4><img src="img/galka.png"alt="картинка"><p>2</p><br>ПРОЕКТОВ ЗАВЕРШЕНО</h4>
         </div>
         <div class="col-12 col-md-3 text-center">
-    <h4><img src="img/kubok.png"alt="картинка"><br>НАГРАД ПОЛУЧЕНО</h4>
+    <h4><img src="img/kubok.png"alt="картинка"><p>0</p><br>НАГРАД ПОЛУЧЕНО</h4>
     </div>
     </div>
     </div>
@@ -277,6 +293,7 @@
     </div>
     </div>
     
+    <section class="section" id="ОТЗЫВЫ">
     <div class="otz">
     <div class="container">
     <div class="row justify-content-center">
@@ -291,6 +308,7 @@
     </div>
     </div>
     </div>
+    
     <div class="row justify-content-center">
         <div class="col-xxl-1 text-center">
     <div class="photo2">
@@ -310,8 +328,10 @@
     </div>
     </div>
      </div>
+    </section>
     
     <footer>
+        <section class="section" id="КОНТАКТЫ">
         <div class="podval">
         <div class="container-fluid conpod">
         <div class="container">
@@ -380,8 +400,12 @@
         </div>
         </div>
         </div>
+        </section>
     </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/jquery-3.6.0.min.js"></script>
+     <script src="js/slick.min.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/myScript.js"></script>
 </body>
 </html>
